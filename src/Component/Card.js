@@ -53,9 +53,9 @@ const Text = styled.p`
 `
 
 const CardPrice = styled.p`
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
-  margin: 20px 0;
+  margin: 10px 0;
   font-weight: bold;
 `;
 
@@ -72,8 +72,8 @@ const CardFeatures = styled.ul`
 const CardButton = styled.button`
   background-color: #e4007c;
   color: #333;
-  padding: 10px 10px;
-  border-radius: 25px;
+  padding: 5px 5px;
+  border-radius: 25px 1px solid black;
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
