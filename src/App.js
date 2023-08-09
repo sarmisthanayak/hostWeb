@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter,Route, Router, Routes } from "react-router-dom";
+import Header from "./Component/Header";
+import HeroSection from "./Component/Hero";
+import { makeStyles } from "@material-ui/core";
+import PricingCardSection from "./Component/Card";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const useStyles = makeStyles({
+  root:{
+    width: '100%',
+    fontFamily: 'sans-serif',
+  }
+});
+
+
+const App = () =>{
+  const classes = useStyles();
+
+  return(
+    <BrowserRouter>
+      <div className={classes.root}>
+        <Header />
+        <HeroSection />
+        <PricingCardSection />
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
