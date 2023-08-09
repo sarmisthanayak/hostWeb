@@ -61,7 +61,7 @@ const CardPrice = styled.p`
 
 const CardFeatures = styled.ul`
   list-style: none;
-  padding: 25px;
+  padding: 10px;
 
   li {
     margin: 10px 0;
