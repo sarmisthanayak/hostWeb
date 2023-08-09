@@ -25,8 +25,8 @@ const Card = styled.div`
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 500px;
-  margin-top: -50px;
+  width: 300px;
+  margin-top: -20px;
   height: 80%;
 
   @media (max-width: 768px) {
@@ -44,7 +44,7 @@ const Image = styled.div`
 
 const CardTitle = styled.h2`
   font-size: 2rem;
-  margin: 20px 0;
+  margin: 10px 0;
   color: #e4007c;
 `;
 
@@ -65,14 +65,14 @@ const CardFeatures = styled.ul`
 
   li {
     margin: 10px 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
 const CardButton = styled.button`
   background-color: #e4007c;
   color: #333;
-  padding: 20px 20px;
+  padding: 10px 10px;
   border-radius: 25px;
   color: #fff;
   font-size: 1.5rem;
