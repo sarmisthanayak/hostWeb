@@ -47,9 +47,6 @@ const Advertise = () => {
                       <PartnerImage src="https://www.asurahosting.in/assets/partners/cloudlinux.svg" alt="Cloudlinux Logo" />
                     </PartnerItem>
                     <PartnerItem>
-                      <PartnerImage src="https://www.asurahosting.in/assets/partners/whmcs.png" alt="WHMCS Logo" />
-                    </PartnerItem>
-                    <PartnerItem>
                       <PartnerImage src="https://www.asurahosting.in/assets/partners/softaculous.svg" alt="Softaculous Logo" />
                     </PartnerItem>
                     <PartnerItem>
