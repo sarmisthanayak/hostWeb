@@ -75,9 +75,11 @@ const CardButton = styled.button`
   padding: 5px 5px;
   border-radius: 25px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 `;
+
+
 
 const PricingCardSection = () => {
   return (
@@ -98,6 +100,7 @@ const PricingCardSection = () => {
         </CardFeatures>
         
       </Card>
+      
     </CardSection>
   );
 };

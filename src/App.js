@@ -4,6 +4,7 @@ import Header from "./Component/Header";
 import HeroSection from "./Component/Hero";
 import { makeStyles } from "@material-ui/core";
 import PricingCardSection from "./Component/Card";
+import Advertise from "./Component/Advertisement";
 
 const useStyles = makeStyles({
   root:{
@@ -22,6 +23,7 @@ const App = () =>{
         <Header />
         <HeroSection />
         <PricingCardSection />
+        <Advertise />
       </div>
     </BrowserRouter>
   );
