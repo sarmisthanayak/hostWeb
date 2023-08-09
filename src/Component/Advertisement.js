@@ -18,7 +18,7 @@ const PartnerCarousel = styled.div`
 `;
 
 const PartnerItem = styled.div`
-  flex: 0 0 calc(16.6667% - 20px);
+  flex: 0 0 calc(16.6667% - 10px);
   margin: 10px;
 `;
 
