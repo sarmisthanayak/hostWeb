@@ -61,7 +61,7 @@ const CardPrice = styled.p`
 
 const CardFeatures = styled.ul`
   list-style: none;
-  padding: 10px;
+  padding: 20px;
 
   li {
     margin: 10px 0;
@@ -73,7 +73,7 @@ const CardButton = styled.button`
   background-color: #e4007c;
   color: #333;
   padding: 5px 5px;
-  border-radius: 25px 1px solid black;
+  border-radius: 25px;
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
