@@ -8,15 +8,13 @@ const Header = () => {
   return (
     <header id="header" className="fixed-top">
       <div className="container-fluid">
-        <div className="row align-items-center justify-content-between">
-          <div className="col-md-3">
+        <div className="row align-items-center">
+          <div className="col-md-3 col-6">
             <img src="http://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
           </div>
-          <div className="col-md-5">
+          <div className="col-md-9 col-6 text-md-end">
             <label htmlFor="menu">&#9776;</label>
             <input type="checkbox" id="menu" />
-          </div>
-          <div className="col-md-8">
             <nav id="navbar" className="navbar">
               <ul className="d-flex justify-content-end">
                 <li className="nav-item">
