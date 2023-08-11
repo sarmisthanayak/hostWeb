@@ -9,14 +9,14 @@ const Header = () => {
     <header id="header" className="fixed-top">
       <div className="container-fluid">
         <div className="row align-items-center justify-content-between">
-          <div className=" col-2 col-md-2">
+          <div className="col-md-3">
             <img src="http://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
           </div>
           <div className="col-md-2">
             <label htmlFor="menu">&#9776;</label>
             <input type="checkbox" id="menu" />
           </div>
-          <div className="col-10 col-md-10">
+          <div className="col-md-7">
             <nav id="navbar" className="navbar">
               <ul className="d-flex justify-content-end">
                 <li className="nav-item">
