@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HeroSec = styled.section`
   background-color: #15212a !important;
-  padding: 60px 0;
+  padding: 135px 0;
   z-index: 0;
   position: relative;
 `;
@@ -87,7 +87,6 @@ const Image = styled.div`
 
     @media (max-width: 768px) {
       display: none;
-    }
   }
 `;
 
