@@ -1,3 +1,7 @@
+import React, { useState } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import MenuIcon from '@material-ui/icons/Menu';
+
 const Header = () => {
   const [showDrawer, setShowDrawer] = useState(false);
 
