@@ -5,6 +5,8 @@ import HeroSection from "./Component/Hero";
 import { makeStyles } from "@material-ui/core";
 import PricingCardSection from "./Component/Card";
 import Advertise from "./Component/Advertisement";
+import LoadBalance from "./Component/Content1";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const useStyles = makeStyles({
   root:{
@@ -24,6 +26,7 @@ const App = () =>{
         <HeroSection />
         <PricingCardSection />
         <Advertise />
+        <LoadBalance />
       </div>
     </BrowserRouter>
   );
