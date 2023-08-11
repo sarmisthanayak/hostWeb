@@ -9,10 +9,10 @@ const Header = () => {
     <header id="header" className="fixed-top">
       <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-md-3 col-6">
+          <div className="col-md-2 col-6">
             <img src="http://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
           </div>
-          <div className="col-md-9 col-6 text-md-end">
+          <div className="col-md-10 col-6 text-md-end">
             <label htmlFor="menu">&#9776;</label>
             <input type="checkbox" id="menu" />
             <nav id="navbar" className="navbar">
