@@ -6,7 +6,7 @@ const PricingCardSection = () => {
     <section className="text-white py-5 "style={{ background: '#15212a'}}>
       <Container>
         <Row className="justify-content-center align-items-center">
-          <Col lg={5} md={8} className="mb-4">
+          <Col md={12} className="mb-4">
             <Card className="border-0 bg-pink text-center" style={{ height: '700px', width: '500px', marginTop: '-100px', background: 'linear-gradient(180deg, #000 55%, #e4007c 45%)'}}>
               <Card.Body className='text-white'>
                 <Card.Img src="http://inebur.com/antler/template/assets/fonts/svg/cloudfiber.svg" alt="Cloud Fiber" className="img-fluid" style={{ width: '30%', height: '10%', display: 'block', margin: '0 auto' }} />
