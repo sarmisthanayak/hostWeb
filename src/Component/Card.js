@@ -7,7 +7,6 @@ const CardSection = styled.div`
   position: relative;
   z-index: 1;
   background: #15212A;
-  margin-top: -88.2px;
   height: 100vh;
 
 
@@ -21,17 +20,17 @@ const CardSection = styled.div`
 const Card = styled.div`
   background: linear-gradient(180deg, #000 60%, #e4007c 40%);
   color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
+  width: 400px;
   margin-top: -20px;
   height: 80%;
 
   @media (max-width: 768px) {
     width: 100px;
-    margin-top: -400px;
+    margin-top: -10px;
   }
 `;
 
@@ -61,10 +60,10 @@ const CardPrice = styled.p`
 
 const CardFeatures = styled.ul`
   list-style: none;
-  padding: 20px;
+  padding: 50px;
 
   li {
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 1rem;
   }
 `;

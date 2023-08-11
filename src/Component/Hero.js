@@ -21,7 +21,7 @@ const VideoBackground = styled.video`
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.5;
 `;
 
 const Overlay = styled.div`
@@ -42,8 +42,9 @@ margin-bottom: 20px!important;
 text-transform: capitalize!important;
 position: relative!important;
 display: inline-block!important;
-line-height: 52px!important;
+line-height: 60px!important;
 color: #fff;
+font-size: 3rem;
 `;
 
 const Description = styled.p`
@@ -52,6 +53,7 @@ color: #fff;
 font-size: 20px!important;
 line-height: 34px!important;
 text-align: center;
+font-size: 2rem;
 `;
 
 const Buttons = styled.div`
