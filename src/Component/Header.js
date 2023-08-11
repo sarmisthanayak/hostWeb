@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -38,16 +38,12 @@ const Header = () => {
       </Navbar>
       {showDrawer && (
         <div className="position-absolute top-0 end-0 bg-dark p-2">
-          <div className="row">
-            <div className="col-12">
-              {menuItems.map((item, index) => (
-                <div key={index} className="text-white mb-2">
-                  {item}
-                </div>
-              ))}
-              <div className="text-white">Login</div>
+          {menuItems.map((item, index) => (
+            <div key={index} className="text-white mb-2">
+              {item}
             </div>
-          </div>
+          ))}
+          <div className="text-white">Login</div>
         </div>
       )}
     </>
