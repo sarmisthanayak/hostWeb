@@ -1,106 +1,31 @@
+import { Container, Row, Col, Card, Button } from 'react-bootstrap'; 
 import React from 'react';
-import styled from 'styled-components';
-
-const CardSection = styled.div`
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  background: #15212A;
-  height: 100vh;
-
-
-  @media (max-width: 768px) {
-    align-items: center;
-    margin-top: 0;
-
-  }
-`;
-
-const Card = styled.div`
-  background: linear-gradient(180deg, #000 60%, #e4007c 40%);
-  color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 400px;
-  margin-top: -20px;
-  height: 80%;
-
-  @media (max-width: 768px) {
-    width: 100px;
-    margin-top: -10px;
-  }
-`;
-
-const Image = styled.div`
-    height: 20%;
-    img{
-        height: 50%;
-    }
-`;
-
-const CardTitle = styled.h2`
-  font-size: 2rem;
-  margin: 10px 0;
-  color: #e4007c;
-`;
-
-const Text = styled.p`
-    font-size: 1rem;
-`
-
-const CardPrice = styled.p`
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 10px 0;
-  font-weight: bold;
-`;
-
-const CardFeatures = styled.ul`
-  list-style: none;
-  padding: 50px;
-
-  li {
-    margin: 20px 0;
-    font-size: 1rem;
-  }
-`;
-
-const CardButton = styled.button`
-  background-color: #e4007c;
-  color: #333;
-  padding: 5px 5px;
-  border-radius: 25px;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-`;
-
-
 
 const PricingCardSection = () => {
   return (
-    <CardSection>
-      <Card>
-        <Image>
-            <img src = "http://inebur.com/antler/template/assets/fonts/svg/cloudfiber.svg"></img>
-        </Image>
-        <CardTitle>All Plans</CardTitle>
-        <Text>Starting at: </Text>
-        <CardPrice>$9.99/mo</CardPrice>
-        <CardButton>Choose Plan</CardButton>
-        <CardFeatures>
-          <li>10GB Storage</li>
-          <li>100GB Bandwidth</li>
-          <li>1 Domain</li>
-          <li>Email Support</li>
-        </CardFeatures>
-        
-      </Card>
-      
-    </CardSection>
+    <section className="text-white py-5 "style={{ background: '#15212a'}}>
+      <Container>
+        <Row className="justify-content-center align-items-center">
+          <Col lg={5} md={8} className="mb-4">
+            <Card className="border-0 bg-pink text-center" style={{ height: '700px', width: '500px', marginTop: '-100px', background: 'linear-gradient(180deg, #000 55%, #e4007c 45%)'}}>
+              <Card.Body className='text-white'>
+                <Card.Img src="http://inebur.com/antler/template/assets/fonts/svg/cloudfiber.svg" alt="Cloud Fiber" className="img-fluid" style={{ width: '30%', height: '10%', display: 'block', margin: '0 auto' }} />
+                <Card.Title className="font-weight-bold pt-4 display-4">All Plans</Card.Title>
+                <Card.Text>Starting at:</Card.Text>
+                <Card.Text className="h1">$9.99/mo</Card.Text>
+                <Button variant="warning" className="rounded-pill px-3 py-3">Choose Plan</Button>
+                <ul className="list-unstyled pl-6 mt-4 pt-5">
+                  <li style={{ marginBottom: '10px' }}>10GB Storage</li>
+                  <li style={{ marginBottom: '10px' }}>100GB Bandwidth</li>
+                  <li style={{ marginBottom: '10px' }}>1 Domain</li>
+                  <li style={{ marginBottom: '10px' }}>Email Support</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
 
