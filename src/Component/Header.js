@@ -12,11 +12,11 @@ const Header = () => {
           <div className="col-md-3">
             <img src="http://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
           </div>
-          <div className="col-md-2">
+          <div className="col-md-5">
             <label htmlFor="menu">&#9776;</label>
             <input type="checkbox" id="menu" />
           </div>
-          <div className="col-md-7">
+          <div className="col-md-8">
             <nav id="navbar" className="navbar">
               <ul className="d-flex justify-content-end">
                 <li className="nav-item">
