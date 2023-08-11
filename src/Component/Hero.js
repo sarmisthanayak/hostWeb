@@ -84,6 +84,10 @@ const Image = styled.div`
     height: auto; 
     display: block; 
     margin: 0 auto; 
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 
