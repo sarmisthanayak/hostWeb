@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PartnersSection = styled.section`
-  padding: 80px 0;
-  background-color: #15212a;
+  padding: 20px 0;
+  background-color: #0047AB;
 `;
 
 const ContainerXL = styled.div`

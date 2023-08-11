@@ -38,13 +38,6 @@ const ImageWrapper = styled.div`
   margin-top: 40px;
 `;
 
-const ImageDescription = styled.p`
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  max-width: 500px;
-  margin-top: 20px;
-`;
 
 const LoadBalance = () => {
     return(
@@ -59,12 +52,26 @@ const LoadBalance = () => {
                         <div className="col-md-12">
                         <ImageWrapper>
                             <img
-                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--RV7__Frh--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/karanpratapsingh/portfolio/master/public/static/courses/system-design/chapter-I/load-balancing/load-balancer.png"
+                            src="http://inebur.com/antler/template/assets/patterns/balancing.svg"
                             alt="Load Balancer"
                             />
-                            <ImageDescription>
-                            Illustration of a Load Balancer in a system design.
-                            </ImageDescription>
+                            <div className="row text-info text-center">
+                              <div className="col-md-4 pb-4 pt-5">
+                                <b className="pink">[1] Users</b>
+                                <br/>
+                                <span className="info seccolor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
+                               </div>
+                               <div className="col-md-4 pb-4 pt-5">
+                                <b className="pink">[2] Load Balancing</b>
+                                <br/>
+                                <span className="info seccolor">Eaque ipsa quae ab illo inventore veritatis et quasi. Eaque ipsa quae omnis iste</span>
+                               </div>
+                               <div className="col-md-4 pb-4 pt-5">
+                                <b className="pink">[3] Cloud Servers</b>
+                                <br/>
+                                <span className="info seccolor">Omnis iste natus error sit voluptatem accusantium doloremque laudantium.</span>
+                               </div>
+                            </div>
                         </ImageWrapper>
                         </div>
 
