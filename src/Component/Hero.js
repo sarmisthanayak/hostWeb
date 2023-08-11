@@ -104,7 +104,7 @@ const HeroSection = () => {
           <Overlay />
           <div className='container'>
             <div className='row'>
-              <div className='col-md-6 pt-5 pb-1 text-center'>
+              <div className='col-md-6 col-sm-6 pt-5 pb-1 text-center'>
               <Title>Welcome to Flup.in Hosting Website</Title>
               <Description>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tincidunt urna, at tempor libero.
@@ -114,7 +114,7 @@ const HeroSection = () => {
                 <Button>Get Started</Button>
               </Buttons>
               </div>
-              <div className='col-md-6 text-center'>
+              <div className='col-md-6 col-sm-6 text-center'>
                 <Image>
                   <img src="https://inebur.com/antler/template/assets/patterns/domainmanage.svg" alt="Hero" />
                 </Image>
