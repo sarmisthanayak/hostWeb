@@ -23,7 +23,7 @@ const App = () =>{
       <div className={classes.root}>
         <Header />
         <Routes>
-        <Route path="/menu1" element={<Menu1Section/>}/>
+        <Route path="/" element={<Menu1Section/>}/>
         <Route path="/menu2" element={<Menu2Section/>} />
         <Route path="/menu3" element={<Menu3Section/>} />
       </Routes>

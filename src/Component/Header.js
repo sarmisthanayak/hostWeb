@@ -112,7 +112,7 @@ const Header = () => {
         </Logo>
         <MenuContainer>
           {menuItems.map((item, index) => (
-            <MenuItem key={index} to={index === 0 ? '/menu1' : index === 1 ? '/menu2' : index === 2 ? '/menu3' : '/'}>
+            <MenuItem key={index} to={index === 0 ? '/' : index === 1 ? '/menu2' : index === 2 ? '/menu3' : '/'}>
               {item}
             </MenuItem>
           ))}
