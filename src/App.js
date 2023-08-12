@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu2Section from "./Pages/Menu2";
 import Menu3Section from "./Pages/Menu3";
 import Menu1Section from "./Pages/Menu1";
+import Footer from "./Component/Footer";
 
 const useStyles = makeStyles({
   root:{
@@ -27,6 +28,7 @@ const App = () =>{
         <Route path="/menu2" element={<Menu2Section/>} />
         <Route path="/menu3" element={<Menu3Section/>} />
       </Routes>
+      <Footer/>
       </div>
     </Router>
   );

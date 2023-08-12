@@ -2,16 +2,23 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const HeaderContainer = styled.div`
-  background-color: #15212a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #fff;
   padding: 25px;
+  background-color: #000;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
 `;
 
 const Logo = styled.div`
   font-size: 1.5rem;
+  text-align: center;
   margin-bottom: 10px;
 `;
 
@@ -20,6 +27,8 @@ const LogoImg = styled.img`
 `;
 
 const MenuContainer = styled.div`
+  display: flex;
+
   @media (max-width: 768px) {
     display: none;
   }
@@ -52,13 +61,13 @@ const HamburgerIcon = styled(MenuIcon)`
 `;
 
 const DrawerContainer = styled.div`
-  background-color: #15212a;
-  padding: 10px;
-  margin-top: 10px;
   display: none;
 
   @media (max-width: 768px) {
     display: ${props => (props.showDrawer ? 'block' : 'none')};
+    background-color: #15212a;
+    padding: 10px;
+    margin-top: 10px;
   }
 `;
 
@@ -84,31 +93,23 @@ const Header = () => {
   };
 
   return (
-    <HeaderContainer>
-      <Container>
-        <Row className="align-items-center justify-content-center">
-          <Col md={2}>
-            <Logo>
-              <LogoImg src="http://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
-            </Logo>
-          </Col>
-          <Col md={5}>
-            <MenuContainer>
-              {menuItems.map((item, index) => (
-                <MenuItem key={index} to={index === 0 ? '/' : `/menu${index + 1}`}>
-                  {item}
-                </MenuItem>
-              ))}
-            </MenuContainer>
-          </Col>
-          <Col md={5}>
-            <LoginContainer>
-              <Button>Login</Button>
-            </LoginContainer>
-            <HamburgerIcon onClick={toggleDrawer} />
-          </Col>
-        </Row>
-      </Container>
+    <>
+      <HeaderContainer>
+        <Logo>
+          <LogoImg src="http://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
+        </Logo>
+        <MenuContainer>
+          {menuItems.map((item, index) => (
+            <MenuItem key={index} to={index === 0 ? '/' : `/menu${index + 1}`}>
+              {item}
+            </MenuItem>
+          ))}
+        </MenuContainer>
+        <LoginContainer>
+          <button>Login</button>
+        </LoginContainer>
+        <HamburgerIcon onClick={toggleDrawer} />
+      </HeaderContainer>
       <DrawerContainer showDrawer={showDrawer}>
         {menuItems.map((item, index) => (
           <DrawerItem key={index} to={index === 0 ? '/' : `/menu${index + 1}`}>
@@ -117,7 +118,7 @@ const Header = () => {
         ))}
         <DrawerItem>Login</DrawerItem>
       </DrawerContainer>
-    </HeaderContainer>
+    </>
   );
 };
 
