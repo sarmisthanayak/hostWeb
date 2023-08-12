@@ -1,12 +1,11 @@
 import React from "react";
-import { BrowserRouter,Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./Component/Header";
-import HeroSection from "./Component/Hero";
 import { makeStyles } from "@material-ui/core";
-import PricingCardSection from "./Component/Card";
-import Advertise from "./Component/Advertisement";
-import LoadBalance from "./Component/Content1";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Menu2Section from "./Pages/Menu2";
+import Menu3Section from "./Pages/Menu3";
+import Menu1Section from "./Pages/Menu1";
 
 const useStyles = makeStyles({
   root:{
@@ -20,15 +19,16 @@ const App = () =>{
   const classes = useStyles();
 
   return(
-    <BrowserRouter>
+    <Router>
       <div className={classes.root}>
         <Header />
-        <HeroSection />
-        <PricingCardSection />
-        <Advertise />
-        <LoadBalance />
+        <Routes>
+        <Route path="/menu1" element={<Menu1Section/>}/>
+        <Route path="/menu2" element={<Menu2Section/>} />
+        <Route path="/menu3" element={<Menu3Section/>} />
+      </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 

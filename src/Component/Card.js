@@ -1,31 +1,72 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'; 
 import React from 'react';
+import styled from 'styled-components';
+
+// ... (previous imports and styles)
+
+const CardSection = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1; 
+  height: 100vh;
+  background: #15212a;
+`;
+
+const Card = styled.div`
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  margin-top: -50px;
+  height: 80%;
+  color: #fff;
+`;
+
+
+const CardTitle = styled.h2`
+  font-size: 1.5rem;
+  margin: 10px 0;
+`;
+
+const CardPrice = styled.p`
+  font-size: 1.25rem;
+  color: #007bff;
+  margin: 10px 0;
+`;
+
+const CardFeatures = styled.ul`
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 10px 0;
+  }
+`;
+
+const CardButton = styled.button`
+  background-color: #f0f0f0;
+  color: #333;
+`;
 
 const PricingCardSection = () => {
   return (
-    <section className="text-white py-5 "style={{ background: '#15212a'}}>
-      <Container>
-        <Row className="justify-content-center align-items-center">
-          <Col md={12} className="mb-4">
-            <Card className="border-0 bg-pink text-center" style={{ height: '700px', width: '500px', marginTop: '-100px', background: 'linear-gradient(180deg, #000 55%, #e4007c 45%)'}}>
-              <Card.Body className='text-white'>
-                <Card.Img src="http://inebur.com/antler/template/assets/fonts/svg/cloudfiber.svg" alt="Cloud Fiber" className="img-fluid" style={{ width: '30%', height: '10%', display: 'block', margin: '0 auto' }} />
-                <Card.Title className="font-weight-bold pt-4 display-4">All Plans</Card.Title>
-                <Card.Text>Starting at:</Card.Text>
-                <Card.Text className="h1">$9.99/mo</Card.Text>
-                <Button variant="warning" className="rounded-pill px-3 py-3">Choose Plan</Button>
-                <ul className="list-unstyled pl-6 mt-4 pt-5">
-                  <li style={{ marginBottom: '10px' }}>10GB Storage</li>
-                  <li style={{ marginBottom: '10px' }}>100GB Bandwidth</li>
-                  <li style={{ marginBottom: '10px' }}>1 Domain</li>
-                  <li style={{ marginBottom: '10px' }}>Email Support</li>
-                </ul>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <CardSection>
+      <Card>
+        <CardTitle>Basic Plan</CardTitle>
+        <CardPrice>$9.99/mo</CardPrice>
+
+        <CardButton>Choose Plan</CardButton>
+        <CardFeatures>
+          <li>10GB Storage</li>
+          <li>100GB Bandwidth</li>
+          <li>1 Domain</li>
+          <li>Email Support</li>
+        </CardFeatures>
+        
+      </Card>
+    </CardSection>
   );
 };
 
