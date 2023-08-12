@@ -52,7 +52,7 @@ const LoadBalance = () => {
                         <div className="col-md-12">
                         <ImageWrapper>
                             <img
-                            src="http://inebur.com/antler/template/assets/patterns/balancing.svg"
+                            src="https://inebur.com/antler/template/assets/patterns/balancing.svg"
                             alt="Load Balancer"
                             />
                             <div className="row text-info text-center">

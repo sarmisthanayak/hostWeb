@@ -8,8 +8,8 @@ const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  padding: 25px;
-  background-color: #000;
+  padding: 10px;
+  background-color: #15212a;
 
   @media (max-width: 768px) {
     padding: 15px;
@@ -20,6 +20,7 @@ const Logo = styled.div`
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 10px;
+  margin-left: 20px;
 `;
 
 const LogoImg = styled.img`
@@ -27,7 +28,10 @@ const LogoImg = styled.img`
 `;
 
 const MenuContainer = styled.div`
-  display: flex;
+display: flex;
+align-items: center; 
+margin-left: auto; 
+padding: 0 20px;
 
   @media (max-width: 768px) {
     display: none;
@@ -35,6 +39,9 @@ const MenuContainer = styled.div`
 `;
 
 const MenuItem = styled(Link)`
+  display: flex;
+  align-items: center; 
+  margin-left: auto;
   color: inherit;
   background: none;
   border: none;
@@ -42,10 +49,16 @@ const MenuItem = styled(Link)`
   cursor: pointer;
   font-size: 1rem;
   text-decoration: none;
-  margin: 0 10px;
 `;
 
-const LoginContainer = styled.div`
+const LoginContainer = styled.button`
+  border: 2px solid blue;
+  border-radius: 50px 20px;
+  background-color: #F33A6A;
+  padding: 10px 20px;
+  color: #fff;
+  margin-right: 20px;
+  
   @media (max-width: 768px) {
     display: none;
   }
@@ -96,7 +109,7 @@ const Header = () => {
     <>
       <HeaderContainer>
         <Logo>
-          <LogoImg src="http://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
+          <LogoImg src="https://inebur.com/antler/template/assets/img/logo.svg" alt="YourLogo" />
         </Logo>
         <MenuContainer>
           {menuItems.map((item, index) => (
@@ -106,7 +119,7 @@ const Header = () => {
           ))}
         </MenuContainer>
         <LoginContainer>
-          <button>Login</button>
+          Login
         </LoginContainer>
         <HamburgerIcon onClick={toggleDrawer} />
       </HeaderContainer>

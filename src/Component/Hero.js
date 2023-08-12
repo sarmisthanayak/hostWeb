@@ -97,7 +97,7 @@ const HeroSection = () => {
   return (
       <HeroSec>
         <VideoBackground autoPlay loop muted>
-            <source src="http://inebur.com/antler/template/assets/videos/planet.mp4" type="video/mp4" />
+            <source src="https://inebur.com/antler/template/assets/videos/planet.mp4" type="video/mp4" />
           </VideoBackground>
         <HeroWrapper>
           
